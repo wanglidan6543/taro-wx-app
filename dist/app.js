@@ -55,7 +55,28 @@ var _App = function (_BaseComponent) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _App.__proto__ || Object.getPrototypeOf(_App)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
-      pages: ['pages/index/index'],
+      pages: ['pages/index/index', 'pages/shopcart/index', 'pages/my/index', 'pages/product/detail/index'],
+      tabBar: {
+        'color': "#999999",
+        'selectedColor': "#333333",
+        'borderStyle': "white",
+        list: [{
+          pagePath: "pages/index/index",
+          text: "首页",
+          'iconPath': "images/home.png",
+          'selectedIconPath': "images/home_selected.png"
+        }, {
+          pagePath: "pages/shopcart/index",
+          text: "购物车",
+          'iconPath': "images/shopcart.png",
+          'selectedIconPath': "images/shopcart_selected.png"
+        }, {
+          pagePath: "pages/my/index",
+          text: "我的",
+          'iconPath': "images/my.png",
+          'selectedIconPath': "images/my_selected.png"
+        }]
+      },
       window: {
         backgroundTextStyle: 'light',
         navigationBarBackgroundColor: '#fff',

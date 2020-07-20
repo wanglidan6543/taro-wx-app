@@ -54,29 +54,37 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
   }
 
   _createClass(Index, [{
-    key: '_constructor',
+    key: "_constructor",
     value: function _constructor(props) {
-      _get(Index.prototype.__proto__ || Object.getPrototypeOf(Index.prototype), '_constructor', this).call(this, props);
+      _get(Index.prototype.__proto__ || Object.getPrototypeOf(Index.prototype), "_constructor", this).call(this, props);
 
       this.$$refs = new _taroWeapp2.default.RefsArray();
     }
   }, {
-    key: 'componentWillMount',
+    key: "componentWillMount",
     value: function componentWillMount() {}
   }, {
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {}
   }, {
-    key: 'componentWillUnmount',
+    key: "componentWillUnmount",
     value: function componentWillUnmount() {}
   }, {
-    key: 'componentDidShow',
+    key: "componentDidShow",
     value: function componentDidShow() {}
   }, {
-    key: 'componentDidHide',
+    key: "componentDidHide",
     value: function componentDidHide() {}
   }, {
-    key: '_createData',
+    key: "toDetail",
+    value: function toDetail() {
+      console.log('click');
+      _taroWeapp2.default.navigateTo({
+        url: '/pages/product/detail/index'
+      });
+    }
+  }, {
+    key: "_createData",
     value: function _createData() {
       this.__state = arguments[0] || this.state || {};
       this.__props = arguments[1] || this.props || {};
@@ -89,7 +97,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
   }]);
 
   return Index;
-}(_taroWeapp.Component), _class.$$events = [], _class.$$componentPath = "pages/index/index", _temp2);
+}(_taroWeapp.Component), _class.$$events = ["toDetail"], _class.$$componentPath = "pages/index/index", _temp2);
 exports.default = Index;
 
 Component(__webpack_require__(/*! @tarojs/taro-weapp */ "./node_modules/@tarojs/taro-weapp/index.js").default.createComponent(Index, true));
