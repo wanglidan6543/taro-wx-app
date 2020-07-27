@@ -1,5 +1,5 @@
 {
-	"miniprogramRoot": "dist/",
+	"miniprogramRoot": "dist/weapp/",
 	"projectname": "taro-wx-app",
 	"description": "",
 	"appid": "touristappid",

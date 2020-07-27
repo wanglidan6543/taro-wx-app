@@ -1,5 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="index"><text>首页!</text>
-        <button bindtap="toDetail">点击我</button>
-    </view>
-</block>

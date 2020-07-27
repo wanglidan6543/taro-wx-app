@@ -30,6 +30,7 @@ export default class Index extends Component {
       <View className='index'>
         <Text>首页!</Text>
         <Button onClick={this.toDetail}>点击我</Button>
+        <Button onClick={this.toDetail}>点击我</Button>
       </View>
     )
   }
